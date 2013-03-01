@@ -23,7 +23,7 @@ end
 
 gem 'jquery-rails'
 
-gem "autotest", "~> 4.4.6"
+#gem "autotest", "~> 4.4.6"
 
 gem 'rails', '3.2.12'
 gem 'sqlite3', '1.3.5'
@@ -35,6 +35,7 @@ end
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
+  gem 'spork', '0.9.0.rc8'
 end
 
 
