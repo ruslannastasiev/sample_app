@@ -28,17 +28,36 @@ gem 'jquery-rails'
 gem 'rails', '3.2.12'
 gem 'sqlite3', '1.3.5'
 
+
+	
+#rescue Exception => e
+	
+
 group :development do
   gem 'rspec-rails', '2.6.1'
+  #gem 'rspec-rails', '2.0.0.beta.18'
 end
 
 group :test do
   gem 'rspec-rails', '2.6.1'
+  #gem 'rspec-rails', '2.0.0.beta.18'
   gem 'webrat', '0.7.1'
   gem 'spork', '0.9.0.rc8'
+  #gem 'spork', '0.8.4'
 end
 
+=begin
 
+group :development do
+  gem 'rspec-rails', '2.0.0.beta.18'
+end
+
+group :test do
+  gem 'rspec-rails', '2.0.0.beta.18'
+  gem 'spork', '0.8.4'
+  gem 'webrat', '0.7.1'
+end
+=end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
