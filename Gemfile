@@ -21,13 +21,19 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+  gem 'jquery-rails'
 
-#gem "autotest", "~> 4.4.6"
+  #gem "autotest", "~> 4.4.6"
 
-gem 'rails', '3.2.12'
-gem 'sqlite3', '1.3.5'
+  gem 'rails', '3.2.12'
 
+  #gem 'sqlite3', '1.3.5'
+
+  gem 'sqlite3', :group => [:development, :test]
+group :production do
+  gem 'thin'
+  gem 'pg'
+end
 
 	
 #rescue Exception => e
@@ -35,19 +41,23 @@ gem 'sqlite3', '1.3.5'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
-  #gem 'rspec-rails', '2.0.0.beta.18'
+  gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+  
 end
 
 group :test do
   gem 'rspec-rails', '2.6.1'
-  #gem 'rspec-rails', '2.0.0.beta.18'
+  
   gem 'webrat', '0.7.1'
   gem 'spork', '0.9.0.rc8'
-  #gem 'spork', '0.8.4'
+  
 end
 
-=begin
+  
 
+
+
+=begin
 group :development do
   gem 'rspec-rails', '2.0.0.beta.18'
 end
