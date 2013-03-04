@@ -23,17 +23,13 @@ end
 
   gem 'jquery-rails'
 
-  #gem "autotest", "~> 4.4.6"
+#gem "autotest", "~> 4.4.6"
 
   gem 'rails', '3.2.12'
 
-  #gem 'sqlite3', '1.3.5'
+  gem 'sqlite3', '1.3.5'
 
-  gem 'sqlite3', :group => [:development, :test]
-group :production do
-  gem 'thin'
-  gem 'pg'
-end
+
 
 	
 #rescue Exception => e
